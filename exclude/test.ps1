@@ -1,0 +1,1 @@
+gcc src/*.c -o my_game_test.exe -O1 -Wall -std=c99 -Wno-missing-braces -I include/ -L lib/ -lraylib -lopengl32 -lgdi32 -lwinmm

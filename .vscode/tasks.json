@@ -1,0 +1,31 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: gcc.exe build active file",
+			"command": "C:\\mingw\\mingw64\\bin\\gcc.exe",
+			"args": [
+				"-g",
+				"${workspaceFolder}\\src\\*.c",
+				"-o",
+				"${workspaceFolder}\\${fileBasenameNoExtension}.exe",
+				"${workspaceFolder}\\lib\\libraylib.a",
+				"C:\\Windows\\System32\\gdi32.dll",
+				"C:\\Windows\\System32\\opengl32.dll",
+				"C:\\Windows\\System32\\winmm.dll"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: \"C:\\mingw\\mingw64\\bin\\gcc.exe\""
+		}
+	]
+}
